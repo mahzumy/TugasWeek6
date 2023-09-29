@@ -29,7 +29,7 @@ export async function POST(req){
             email: findUser.email
         }
        
-        const token = sign(payLoad, process.env._KEY, {expiresIn: "1d"});
+        const token = sign(payLoad, process.env.KEY, {expiresIn: "1d"});
         //console.log(token);
 
         return NextResponse.json({token, data:payLoad, message:"User Login Succesfully"},{status:201})
