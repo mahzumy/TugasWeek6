@@ -1,4 +1,4 @@
-import { prisma } from "@/app/utils/prisma";
+import { prisma } from "@/utils/prisma";
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt"
 import { sign } from "jsonwebtoken";
